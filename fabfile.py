@@ -1,11 +1,12 @@
 from fabric.api import *
 
-env.user='yG.6059.'
+env.user='latentflip'
 env.hosts=['latentflip.com']
 env.root='/home/latentflip/DjangoProjects/RedisWeb'
 
 def deploy():
     git_push()
+    virtualenv()
 
 def git_push():
     local('git push github master')
