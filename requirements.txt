@@ -1,4 +1,5 @@
 Fabric==0.9rc1
 flup>=1.0.2
 pycrypto==2.0.1
+web.py==0.33
 wsgiref==0.1.2

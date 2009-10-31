@@ -1,3 +1,15 @@
+#!/home/latentflip/DjangoProjects/RedisWeb/env/bin/python
+
+import os, sys, logging
+logging.basicConfig(filename='log.txt', level=logging.DEBUG)
+
+
+
+logging.debug(sys.path)
+
+activate_this = os.path.expanduser("~/DjangoProjects/RedisWeb/env/bin/activate_this.py")
+execfile(activate_this, dict(__file__=activate_this))
+
 import web, redis, inspect
 
 urls = (
