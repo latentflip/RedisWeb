@@ -14,8 +14,10 @@ import web, redis, inspect
 
 urls = (
   '/', 'index',
+  '/([\w\d]+)', 'database',
   '/([\w\d]+)/([\w\d]+)', 'database',
   '/([\w\d]+)/([\w\d]+)/([\w\d]+)', 'database',
+  '/([\w\d]+)/([\w\d]+)/([\w\d]+)/([\w\d]+)', 'database',
 )
 
 db = redis.Redis()
